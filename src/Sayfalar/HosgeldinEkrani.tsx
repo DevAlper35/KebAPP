@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Button from '../Components/Button'
 
@@ -8,10 +8,22 @@ export default function HosgeldinEkrani({navigation}) {
         navigation.navigate("Kayit")
     }
 
+    function girisEkrani(){
+        navigation.navigate("Giris")
+    }
+
+    function sifreEkrani(){
+        navigation.navigate("Sifre")
+    }
+
     return (
         <View style={styles.container}>
-        <Text style={styles.header}>Hosgeldin Kenks</Text>
-        <Button metin={"Üye Kaydı Oluştur"} tiklama={kayit}/>
+        <Text style={styles.header}>Hoşgeldin Kenks</Text>
+        <Button metin={"Giriş Yap"} tiklama={girisEkrani}/>
+        <Button metin={"Kayıt Ol"} tiklama={kayit}/>
+        <TouchableOpacity onPress={sifreEkrani}>
+            <Text style={styles.sifremiUnuttum}>Şifremi Unuttum</Text>
+        </TouchableOpacity>
         </View>
     )
 }
@@ -28,5 +40,9 @@ const styles = StyleSheet.create({
         color: "black",
         margin:10,
         textAlign: "center"
+    },
+    sifremiUnuttum: {
+        color: "blue",
+        textDecorationLine: "underline"
     }
 })
