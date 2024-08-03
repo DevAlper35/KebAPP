@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
         padding: 10,
         margin: 5,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        width:250
     },
     metin: {
         color : "white",
