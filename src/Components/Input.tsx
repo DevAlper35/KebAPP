@@ -7,7 +7,9 @@ export default function Input({etiket, hint, girdi}) {
         <Text style={styles.label}>{etiket}</Text>
         <View style={styles.input_container}>
             <TextInput 
+                style ={styles.yazi}
                 placeholder={hint}
+                placeholderTextColor={"lightgrey"}
                 onChangeText={girdi}
             />
         </View>
@@ -18,7 +20,8 @@ export default function Input({etiket, hint, girdi}) {
 const styles = StyleSheet.create({
     container: {
         margin:10,
-        width:"95%"
+        width:"95%",
+        
     },
     input_container: {
         margin:3,
@@ -35,5 +38,8 @@ const styles = StyleSheet.create({
         fontSize:15,
         paddingLeft:10,
         color: "black"
+    },
+    yazi:{
+        color: "black",
     }
 })
