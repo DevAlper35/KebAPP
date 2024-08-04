@@ -43,6 +43,9 @@ export default function UyeKaydi({navigation}) {
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: "center"
+        paddingTop:20,
+        alignItems: "center",
+        backgroundColor: "cornsilk",
+        flex:1
     }
 })

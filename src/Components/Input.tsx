@@ -27,10 +27,13 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderWidth: 1,
         height:42,
-        borderColor: "#bdbdbd"
+        borderColor: "#bdbdbd",
+        color:"#bdbdbd",
+        backgroundColor: "white"
     },
     label:{
         fontSize:15,
-        marginLeft:10
+        paddingLeft:10,
+        color: "black"
     }
 })

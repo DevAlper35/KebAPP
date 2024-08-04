@@ -12,18 +12,13 @@ export default function HosgeldinEkrani({navigation}) {
         navigation.navigate("Giris")
     }
 
-    function sifreEkrani(){
-        navigation.navigate("Sifre")
-    }
 
     return (
         <View style={styles.container}>
         <Text style={styles.header}>Hoşgeldin Kenks</Text>
         <Button metin={"Giriş Yap"} tiklama={girisEkrani}/>
         <Button metin={"Kayıt Ol"} tiklama={kayit}/>
-        <TouchableOpacity onPress={sifreEkrani}>
-            <Text style={styles.sifremiUnuttum}>Şifremi Unuttum</Text>
-        </TouchableOpacity>
+        
         </View>
     )
 }
@@ -32,7 +27,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "cornsilk"
     },
     header: {
         fontSize: 30,
@@ -41,8 +37,5 @@ const styles = StyleSheet.create({
         margin:10,
         textAlign: "center"
     },
-    sifremiUnuttum: {
-        color: "blue",
-        textDecorationLine: "underline"
-    }
+    
 })
